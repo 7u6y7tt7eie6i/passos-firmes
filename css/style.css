@@ -741,9 +741,9 @@ html:not(.js) .stage { opacity: 1; transform: none; }
 
   /* Hero: foto em cima, cartão sobreposto embaixo */
   .hero { display: block; min-height: 0; background: var(--off); --hero-pos: 50% 50%; }
-  .hero__img { position: relative; height: 300px; }
-  .hero__overlay { bottom: auto; height: 300px; background: linear-gradient(0deg, rgba(11, 31, 61, .35), transparent 50%); }
-  .hero__content { padding-block: 0 32px; margin-top: -60px; }
+  .hero__img { position: relative; height: auto; aspect-ratio: 1911 / 875; } /* mostra a foto inteira */
+  .hero__overlay { bottom: auto; height: auto; aspect-ratio: 1911 / 875; background: linear-gradient(0deg, rgba(11, 31, 61, .35), transparent 50%); }
+  .hero__content { padding-block: 0 32px; margin-top: -22px; }
   .hero__card { max-width: none; padding: 28px 22px 28px; }
   .ht-sm, .ht-box { font-size: 2.05rem; }
   .ht-xl { font-size: 3.6rem; }
