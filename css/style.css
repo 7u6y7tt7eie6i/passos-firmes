@@ -925,3 +925,17 @@ html:not(.js) .stage { opacity: 1; transform: none; }
   .info span, .info a:not(.btn) { font-size: .74rem; line-height: 1.45; display: block; }
   .info__action .btn { padding: 11px 10px; font-size: .8rem; }
 }
+
+/* Rodapé no celular: tudo centralizado e organizado */
+@media (max-width: 640px) {
+  .footer__grid { text-align: center; gap: 0; padding-block: 44px 8px; }
+  .footer__brand { display: flex; flex-direction: column; align-items: center; padding-bottom: 28px; }
+  .footer__brand p { margin-inline: auto; }
+  .social { justify-content: center; }
+  .footer__col { padding-block: 24px; border-top: 1px solid rgba(255, 255, 255, .1); }
+  .footer h4 { margin-bottom: 14px; }
+  .footer__col ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; }
+  .footer__col li { margin: 0; }
+  .footer__col:last-child ul { flex-direction: column; align-items: center; gap: 8px; }
+  .footer__bottom { flex-direction: column; align-items: center; text-align: center; gap: 8px; padding-bottom: 90px; }
+}
