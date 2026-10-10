@@ -911,3 +911,17 @@ html:not(.js) .stage { opacity: 1; transform: none; }
   .stage h3 small { font-size: .56rem; margin-bottom: 3px; }
   .stage p { font-size: .8rem; line-height: 1.5; }
 }
+
+/* Localização: mapa de um lado e informações do outro também no celular/tablet */
+@media (max-width: 1000px) {
+  .location__grid { grid-template-columns: 1fr 1fr; }
+  .location__map, .location__map iframe { min-height: 0; height: 100%; }
+}
+@media (max-width: 640px) {
+  .info { padding: 16px 12px; gap: 14px; }
+  .info li { gap: 8px; flex-direction: column; }
+  .info svg { width: 30px; height: 30px; padding: 6px; border-radius: 9px; }
+  .info b { font-size: .8rem; margin-bottom: 0; }
+  .info span, .info a:not(.btn) { font-size: .74rem; line-height: 1.45; display: block; }
+  .info__action .btn { padding: 11px 10px; font-size: .8rem; }
+}
