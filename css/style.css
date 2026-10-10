@@ -893,3 +893,21 @@ html:not(.js) .stage { opacity: 1; transform: none; }
   .about__grid { gap: 56px; }
   .partners img { max-width: 100%; }
 }
+
+/* Diferenciais: cartões com foto ficam sem o ícone sobreposto */
+.perk:not(.perk--wide) .perk__ico { display: none; }
+.perk:not(.perk--wide) .perk__photo { margin-bottom: 22px; }
+
+/* Ensino no celular: grade 2x2 compacta, sem linha do tempo */
+@media (max-width: 640px) {
+  .journey { grid-template-columns: repeat(2, 1fr); gap: 12px; padding-left: 0; }
+  .journey::before, .journey::after, .stage__marker { display: none; }
+  .stage__card { padding: 16px 14px 18px; border-radius: 14px; }
+  .stage__card:hover { transform: none; }
+  .stage__top { flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+  .stage__ico { width: 40px; height: 40px; padding: 10px; border-radius: 12px; }
+  .stage__age { font-size: .58rem; padding: 4px 8px; }
+  .stage h3 { font-size: .98rem; margin-bottom: 6px; }
+  .stage h3 small { font-size: .56rem; margin-bottom: 3px; }
+  .stage p { font-size: .8rem; line-height: 1.5; }
+}
